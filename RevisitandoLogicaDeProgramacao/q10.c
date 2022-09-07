@@ -12,16 +12,15 @@ typedef struct dados_pessoas{
 
 int main(){
   
-  Pessoa pessoas[TAM]; //cria um vetor de pessoas
+  Pessoa pessoas[TAM];
 
-  //leitura dos dados
   for (int i = 0; i < TAM; i ++){
     printf("Digite o nome: ");
     
     fgets(pessoas[i].nome, 40, stdin); 
-    size_t ln = strlen(pessoas[i].nome) - 1; //size_t = unsigned integer type
+    size_t ln = strlen(pessoas[i].nome) - 1; 
     if (pessoas[i].nome[ln] == '\n')
-      pessoas[i].nome[ln] = '\0'; // caracter de final de string
+      pessoas[i].nome[ln] = '\0';
 
     printf("Digite o sexo(m/f): ");
     scanf("%c", &pessoas[i].sexo);

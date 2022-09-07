@@ -1,20 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
-int ler3num(int n1, int n2, int n3);
+
+void ler3num(int n[]);
 
 int main()
 {   
-    int a, b, c;
-    printf("Digite o primeiro numero: ");
-    scanf("%d", &a);
-    printf("Digite o primeiro numero: ");
-    scanf("%d", &b);
-    printf("Digite o primeiro numero: ");
-    scanf("%d", &c);
+  int numeros [3];
+  numeros[0] = 11;
+  numeros[1] = 12;
+  numeros[2] = 13;
+  ler3num(numeros);
+  printf("Os valores lidos são %d, %d e %d\n", numeros[0], numeros[1], numeros[2]); 
 }
 
-
-int ler3num(int n[3]){
-  
-    return ;
+void ler3num(int n[]){
+  n[0] = 1;
+  n[1] = 2;
+  n[2] = 3;
 }
